@@ -21,6 +21,8 @@ const Navbar = ({ setShowLogin }) => {
       setMenu('blogs');
     } else if (pathname === '/contact-us') {
       setMenu('contact us');
+    } else if (pathname === '/recommendations') {
+      setMenu('recommendations');
     } else {
       setMenu('');
     }
@@ -54,6 +56,12 @@ const Navbar = ({ setShowLogin }) => {
           onClick={() => setMenu('categories')}
         >
           <Link to='/products'>Products</Link>
+        </li>
+        <li
+          className={`center ${menu === 'recommendations' ? 'active' : ''}`}
+          onClick={() => setMenu('recommendations')}
+        >
+          <Link to='/recommendations'>Recommendations</Link>
         </li>
         <li
           className={`center ${menu === 'blogs' ? 'active' : ''}`}

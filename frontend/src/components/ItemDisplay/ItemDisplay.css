@@ -71,7 +71,7 @@
 
 .p-description-box {
     width: 600px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
+    height: 180px; /* Adjust height as needed */
     overflow: auto; /* Enable scrolling */
     border: 1px solid #ccc; /* Add border for the box */
     border-radius: 5px; /* Optional: Add rounded corners */
@@ -131,7 +131,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    width: 700px;
     height: 700px;
     background-color: #fff;
     border: 1px solid #ccc;

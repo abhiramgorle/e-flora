@@ -68,7 +68,7 @@
     border: 1px solid #ffffff; /* Add border for the box */
     border-radius: 5px; /* Optional: Add rounded corners */
     padding: 10px;
-    max-height: 65px; /* Set maximum height for the container */
+    max-height: 85px; /* Set maximum height for the container */
 }
 .food-item-desc::-webkit-scrollbar {
     display: none;

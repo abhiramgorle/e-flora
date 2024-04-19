@@ -15,6 +15,7 @@ import Pdit from './pages/Pdit/Pdit'
 import Search from './pages/Search/Search'
 import Blogs from './pages/Blogs/Blogs'
 import Contactus from './pages/Contactus/Contactus'
+import Recommend from './pages/recommendations/Recommend'
 
 const App = () => {
 
@@ -37,6 +38,7 @@ const App = () => {
           <Route path='/order' element={<PlaceOrder />}/>
           <Route path='/myorders' element={<MyOrders />}/>
           <Route path='/verify' element={<Verify />}/>
+          <Route path='/recommendations' element={<Recommend />}/>
         </Routes>
       </div>
 

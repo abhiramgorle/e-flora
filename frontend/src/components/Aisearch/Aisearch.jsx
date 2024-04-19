@@ -17,7 +17,7 @@ function Aisearch({ productName }) { // Accept productName as a prop
         url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyCTYqcwmIWKOEqPz5R8Hum_A5Bss-T7fSw",
         method: "post",
         data: {
-          contents: [{ parts: [{ text: productName }] }], // Use productName instead of question
+          contents: [{ parts: [{ text: question }] }], // Use productName instead of question
         },
       });
 
@@ -53,7 +53,7 @@ function Aisearch({ productName }) { // Accept productName as a prop
             Generate answer
           </button>
         </form>
-        <div className="w-full md:w-2/3 m-auto text-center rounded bg-gray-50 my-1">
+        <div className="w-full md:w-2/3 m-auto text-left rounded bg-gray-50 m-1">
           <ReactMarkdown className="p-3">{answer}</ReactMarkdown>
         </div>
       </div>
