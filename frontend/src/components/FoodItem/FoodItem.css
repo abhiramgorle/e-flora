@@ -1,0 +1,89 @@
+.food-item{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000050;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+}
+.food-item:hover{
+    transform: scale(1.02);
+}
+.food-item-img-container{
+    position: relative;
+    height: 300px;
+    align-items: center;
+}
+.food-item-img-container .add{
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.food-item-img-container .add:hover{
+    border: 2px solid #FF4C24;
+}
+.food-item-image{
+   width: 100%;
+   height: 100%;
+   border-radius: 15px 15px 0px 0px;
+}
+.food-item-counter{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+.food-item-counter img{
+    width: 30px;
+}
+.food-item-info{
+    padding: 20px;
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.food-item-name-rating p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.food-item-name-rating img{
+    width: 70px;
+}
+.food-item-desc {
+    color: #676767;
+    font-size: 12px; /* Adjust font size as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+    border: 1px solid #ffffff; /* Add border for the box */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 10px;
+    max-height: 65px; /* Set maximum height for the container */
+}
+.food-item-desc::-webkit-scrollbar {
+    display: none;
+}
+
+
+.p-description {
+    font-size: 16px;
+    color: #333; /* Default text color */
+    line-height: 1.5;
+    /* Add any other styles you want to apply to the paragraph */
+}
+.food-item-price{
+    color: #FF4C24;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+}

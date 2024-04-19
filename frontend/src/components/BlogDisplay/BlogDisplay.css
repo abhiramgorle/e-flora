@@ -1,0 +1,30 @@
+
+
+.blogbox img{
+    height: 400px;
+    width: 700px;
+    border-radius: 20px;
+}
+/* Target the description paragraph within the .blogbox */
+/* Target the description paragraph within the .blogbox */
+/* Target the description paragraph within the .blogbox */
+.blogbox p {
+    /* Your CSS styles for the description */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    /* Set maximum lines to display */
+    max-height: calc(1.5 * 1.5 * 0.7); /* Assuming 1.5em line-height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Enable vertical scrollbar */
+    overflow-y: auto;
+    /* Hide the scrollbar */
+    scrollbar-width: none; /* For Firefox */
+}
+
+/* Hide the scrollbar for WebKit browsers */
+.blogbox p::-webkit-scrollbar {
+    display: none;
+}
+

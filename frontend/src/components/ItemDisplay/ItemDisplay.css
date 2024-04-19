@@ -1,0 +1,188 @@
+.item-display {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-between; /* To evenly distribute items */
+    gap: 5%;
+}
+
+.plantdetails {
+    flex: 1; /* Take up remaining space */
+    height: 300px;
+    width: 300px;
+    margin: 3%;
+    vertical-align: center;
+}
+
+.product-price {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgb(48, 94, 2);
+}
+
+.addtocart {
+    gap: 50px;
+    display: flex;
+}
+
+.addy {
+    outline: 0;
+    border-radius: 5px;
+    font-size: x-large;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(44, 84, 3);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color ease-out 333ms, color ease-out 333ms, height ease-out 333ms, width ease-out 333ms;
+}
+
+.addy:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 84, 3);
+    height: 55px;
+    width: 210px;
+}
+
+.buyy {
+    outline: 0;
+    border-radius: 5px;
+    font-size: x-large;
+    height: 50px;
+    border: solid rgb(44, 84, 3);
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 84, 3);
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color ease-out 333ms, color ease-out 333ms, height ease-out 333ms, width ease-out 333ms;
+}
+
+.buyy:hover {
+    background-color: rgb(44, 84, 3);
+    color: rgb(255, 255, 255);
+    height: 55px;
+    width: 210px;
+}
+
+.p-description-box {
+    width: 600px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    overflow: auto; /* Enable scrolling */
+    border: 1px solid #ccc; /* Add border for the box */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    padding: 10px; /* Optional: Add padding inside the box */
+}
+
+.p-description {
+    font-size: 16px;
+    color: #333; /* Default text color */
+    line-height: 1.5;
+    /* Add any other styles you want to apply to the paragraph */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.quantity {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.quantity p {
+    padding-right: 13px;
+    font-weight: 900;
+}
+
+.ai {
+    display: flex;
+    gap: 20%;
+}
+
+/* Styles for blurred background */
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(5px); /* Apply blur effect to the background */
+    z-index: 1000; /* Ensure the background is behind other elements */
+}
+
+/* Styles for AI box */
+.ai-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 700px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001; /* Ensure the AI box is above the blurred background */
+    overflow: auto; /* Enable scrolling if content exceeds the box height */
+    padding: 20px;
+}
+
+/* Close button for AI box */
+.ai-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.ai-box {
+    /* Existing styles for .ai-box */
+    overflow: hidden; /* Hide scrollbar */
+  }
+  
+  .ai-box::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+  }
+  
+  .ai-box {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer/Edge */
+  }
+  .aibtn {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .aibtn:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+  }
+  

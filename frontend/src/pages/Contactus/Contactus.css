@@ -1,0 +1,39 @@
+/* ContactUs.css */
+
+.contactus-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contactus-label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contactus-input,
+  .contactus-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contactus-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contactus-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Add additional styling as needed */
+  
